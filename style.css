@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bkg {
+  background-image: url('https://wallpaperstudio10.com/static/wpdb/wallpapers/1920x1080/172502.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 -300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pic-card {
+  position: relative;
+  top: 150px;
+  align-self: center;
+  max-width: 290px;
+  width: 100%;
+  color: #bbb;
+  font-size: 16px;
+  box-shadow: none !important;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.pic-card * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.pic-card .profile-pic {
+  height: 290px;
+  width: 290px;
+  backface-visibility: hidden;
+  vertical-align: top;
+  border-radius: 50%;
+}
+
+.profile-pic img {
+  height: 100%;
+  border: 20px solid rgba(255, 255, 255, 0.4);
+  transform: translateX(-50%);
+  margin-left: 50%;
+}
+
+.pic-card figcaption {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.pic-card i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  z-index: 1;
+}
+
+.pic-card:hover figcaption {
+  opacity: 1;
+  transition: .6s;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.details-container {
+  background: linear-gradient(180deg, rgba(5,198,180,0.5), rgba(5,198,180,1) 30%);
+  width: 100%;
+  padding-top: 50px;
+}
+
+.details {
+  background-color: white;
+  margin: 100px 50px;
+  padding: 40px 0;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.block {
+  margin: 50px;
+}
+
+span {
+  display: inline-block;
+  margin-left: 100px;
+  color: #05c6b4;
+  width: 100px;
+}
+
+input {
+  width: 50%;
+  margin-left: 250px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.stroke {
+  border: 1px solid #05c6b4;
+  margin-top: 25px;
+  box-shadow: 0 0 20px rgba(5, 198, 180, 0.8), 0 0 20px rgba(5, 198, 180, 0.19);
+}
+
+.hide, .file-upload {
+  display: none;
+}
+
+p {
+  color: white;
+  margin: 0 0 50px 50px;
+}

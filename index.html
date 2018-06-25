@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile Page</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+	<script type="text/javascript" src="./index.js"></script>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body ng-app="profileApp">
+	<div ng-controller="formCtrl" class="bkg">
+  	<figure class="pic-card">
+    	<div class="profile-pic">
+      		<img src="{{imgSrc}}" class="profile-pic" id="profile-pic">
+    	</div>
+    	<figcaption><i class="ion-camera" ng-click="iconClick()"></i></figcaption>
+  	</figure>
+  	<input class="file-upload" type="file" accept="image/*" id="upload" custom-on-change="readURL">
+  	<div class="details-container">
+     	<div class="details">
+      		<div class="block">
+	        	<span class="">First Name</span>
+	      		<input type="text" ng-model="data.firstName">
+        		<div class="stroke"></div>
+      		</div>
+	      	<div class="block">
+	        	<span>Last Name</span>
+	      		<input type="text" ng-model="data.lastName">
+	        	<div class="stroke"></div>
+	      	</div>
+	      	<div class="block">
+	        	<span>Email</span>
+	      		<input type="email" ng-model="data.email">
+	        	<div class="stroke"></div>
+	      	</div>
+	      	<div class="block">
+	        	<span>Phone</span>
+	      		<input type="text" ng-model="data.phone">
+	      	</div>
+	    </div>
+    	<p>By Haiyue Ma</p>
+  	</div>
+	</div>
+</body>
+</html>
